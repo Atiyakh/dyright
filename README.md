@@ -35,6 +35,19 @@ This information gap is particularly problematic in notebook environments where:
 
 Dyright addresses this need by augmenting static type information with controlled runtime inspection, providing a unified hover experience that combines type-theoretic guarantees with empirical runtime data.
 
+### Platform and Dependency Clarification
+
+Dyright does **not** require any proprietary Microsoft platforms or services.
+
+While Dyright extends and integrates with **Pyright**, an open-source static type checker originally developed by Microsoft, Pyright itself is licensed under the MIT license and runs locally. Dyright does not depend on Microsoft cloud services, Microsoft accounts, or proprietary tooling.
+
+Dyright operates entirely on:
+- Local CPython runtimes
+- Standard Jupyter kernels (ipykernel)
+- Open-source libraries (e.g., Pyright, ZeroMQ, aiohttp)
+
+Supported operating systems include Linux, macOS, and Windows—any platform capable of running Python and Jupyter. All runtime inspection occurs locally and no data is transmitted externally.
+
 ## Architecture
 
 ### System Overview
