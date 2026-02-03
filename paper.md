@@ -9,7 +9,7 @@ tags:
   - language server protocol
 authors:
   - name: Atiya Alkhodari
-    orcid: 0000-0000-0000-0000
+    orcid: 0009-0008-3133-005X
     corresponding: true
     affiliation: 1
 affiliations:
