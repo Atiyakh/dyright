@@ -15,8 +15,10 @@ authors:
 affiliations:
   - name: Independent Researcher
     index: 1
+    country: Turkey
 date: 3 February 2026
 bibliography: paper.bib
+license: MIT
 
 ---
 
