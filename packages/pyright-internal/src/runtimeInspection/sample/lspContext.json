@@ -1,0 +1,53 @@
+{
+  "kernel": {
+    "id": "my-notebook-kernel",
+    "connectionFile": ""
+  },
+  "inspectionServer": {
+    "port": 8765,
+    "host": "localhost"
+  },
+  "enabled": true,
+  "debug": false,
+  "typeInspections": {
+    "pandas.DataFrame": {
+      "maxSizeMb": 50,
+      "timeoutMs": 2000,
+      "copyStrategy": {
+        "mode": "shallow",
+        "maxDepth": 1
+      },
+      "resourceLimits": {
+        "ramMb": 256,
+        "cpuPercent": 50
+      },
+      "inspectionCode": "inspection_scripts/dataframe.py"
+    },
+    "pandas.Series": {
+      "maxSizeMb": 20,
+      "timeoutMs": 1000,
+      "copyStrategy": {
+        "mode": "shallow",
+        "maxDepth": 1
+      },
+      "resourceLimits": {
+        "ramMb": 128,
+        "cpuPercent": 50
+      },
+      "inspectionCode": "inspection_scripts/series.py"
+    },
+    "numpy.ndarray": {
+      "maxSizeMb": 100,
+      "timeoutMs": 1000,
+      "copyStrategy": {
+        "mode": "shallow",
+        "maxDepth": 1
+      },
+      "resourceLimits": {
+        "ramMb": 256,
+        "cpuPercent": 50
+      },
+      "inspectionCode": "inspection_scripts/ndarray.py"
+    }
+  }
+}
